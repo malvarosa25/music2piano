@@ -9,7 +9,7 @@ Convert the audio I downloaded from YouTube into piano music.ฅ^•ω•^ฅ
 # Installation
 
 ```bash
-pip install yt-dlp demucs basic-pitch pretty_midi mido
+pip install yt-dlp demucs basic-pitch pretty_midi librosa soundfile numpy
 
 sudo apt update
 sudo apt install ffmpeg fluidsynth
@@ -25,8 +25,8 @@ cd ..
 # Usage
 
 ```bash
-git clone https://github.com/hoge/~
-python mk_piano.py --links links.txt --soundfont ./soundfonts/piano.sf2 --out output
+git clone git@github.com:malvarosa25/music2piano.git
+python mk_piano.py --links links.txt --soundfont soundfonts/piano.sf2 --out output --vocal-timbre violinish
 ```
 
 # Note
